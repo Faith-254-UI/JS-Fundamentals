@@ -1,11 +1,10 @@
-const languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
-let result = "";
+const lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
+let i = 0;
+let output = "";
 
-for (let i = 0; i < languages.length; i++) {
-  result += languages[i];
-  if (i < languages.length - 1) {
-    result += "\n";
-  }
+while (i < lines.length) {
+  output += lines[i] + (i < lines.length - 1 ? "\n" : "");
+  i++;
 }
 
-console.log(result);
+console.log(output);
